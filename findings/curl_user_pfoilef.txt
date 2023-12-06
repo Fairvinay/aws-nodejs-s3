@@ -1,0 +1,1 @@
+curl -X GET "https://www.googleapis.com/oauth2/v1/userinfo?alt=json" -H"Authorization: Bearer ya29.a0AX9GBdUEueGY3DKwRL7XxtsEjQPfl8mY-ViOJ9LT6h-80lrZJdtu5qT-miy1YUrJuNY0_QYQdHjDVhH9ScrE_Iw-7w001B8Rb8D4YTLUCM8HX19_Hgl0gRBwuHnlrHL3MBCqvln2oBWGzTNVYUdYbYzoB_UbaCgYKAQ8SARESFQHUCsbC0tVadvcPNVmMYo80zbFZxQ0163"
