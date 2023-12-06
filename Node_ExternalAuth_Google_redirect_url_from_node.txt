@@ -1,0 +1,19 @@
+ res.redirect(`${providerConfig.authorizeUrl}` +
+      `?client_id=${providerConfig.clientID}` +
+      `&response_type=code` +
+      `&state=${stateService.setAndGetNewState(req.session)}` +
+      // `&access_type=offline` + // INFO: this requests Refresh Token
+      `&scope=${providerConfig.scope}` +
+      `&redirect_uri=${redirect_uri}`);
+      
+       clientID:     "396135579027-b4gvu1u72l9lhhvov29eild52emov1ak.apps.googleusercontent.com",  //'<place `clientID` here>',
+    clientSecret:  "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" 
+    session.oauthState = randtoken.generate(LENGTH);
+      
+   // THIS BELOW WORLKS   
+   // NOTE the CALL BACK URL MUST be UNQIUE with the Client Id regstered in cloud.google 
+   // https://console.cloud.google.com/apis/credentials/oauthclient/396135579027-b4gvu1u72l9lhhvov29eild52emov1ak.apps.googleusercontent.com?authuser=1&authuser=1&hl=en_GB&project=cruseletters&supportedpurview=project
+   // so for NodeEmail you must have a different UNQIUE with the Client Id regstered with the 
+   // https://localhost:8443/auth/external/google/callback
+   
+      https://accounts.google.com/o/oauth2/v2/auth?client_id=396135579027-b4gvu1u72l9lhhvov29eild52emov1ak.apps.googleusercontent.com&response_type=code&state='85335383473'&scope=email&redirect_uri=https://localhost:8080/api/auth/external/google/callback/login

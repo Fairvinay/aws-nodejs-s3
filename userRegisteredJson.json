@@ -1,0 +1,15 @@
+{
+   "users":[
+      {
+         "id":"7",
+         "accountId":"1",
+         "email":"anvekar.v.anandi@gmail.com",
+         "role":"OWNER",
+         "confirmed":"true",
+         "externalId":{
+            "google":"116215353782290208356"
+         },
+         "createdWith":"password"
+      }
+   ]
+}
